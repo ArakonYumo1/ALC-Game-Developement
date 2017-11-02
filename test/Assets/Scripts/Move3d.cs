@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class move3D : MonoBehaviour {
+public class Move3d : MonoBehaviour {
+    
     public float moveSpeed;
     public float turnSpeed;
     public float jumpHeight;

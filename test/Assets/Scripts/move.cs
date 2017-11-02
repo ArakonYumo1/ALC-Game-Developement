@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class move : MonoBehaviour {
+	
 	public float moveSpeed;
 	public float turnSpeed;
 
