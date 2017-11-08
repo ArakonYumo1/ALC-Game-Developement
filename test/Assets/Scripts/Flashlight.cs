@@ -25,10 +25,17 @@ public class Flashlight : MonoBehaviour {
 		
 	}
 
-	else if (Input.GetKeyUp (KeyCode.L) && !lightOn){
-		lightOn = true;
-		light.enabled = true;
-		}
-		
+		else if (Input.GetKeyUp (KeyCode.L) && !lightOn){
+			lightOn = true;
+			light.enabled = true;
+		}	
 	}
+	public void setLightOn(){
+		lightOn = true;
+
+	}
+
+	public bool isLightOn(){
+		return lightOn;
+}
 }
