@@ -11,7 +11,7 @@ public class Move3d : MonoBehaviour {
 
     void Update () {
         var j = Input.GetAxis("Jump")* Time.deltaTime * jumpHeight;
-        var y = Input.GetAxis("Horixontal")* Time.deltaTime * turnSpeed;
+        var y = Input.GetAxis("Horizontal")* Time.deltaTime * turnSpeed;
         var z = Input.GetAxis("Vertical")* Time.deltaTime * moveSpeed;
 
         transform.Rotate(0,y,0);

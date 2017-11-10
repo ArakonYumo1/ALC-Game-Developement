@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GhostStun : MonoBehaviour {
 
+	
 	bool lightcheck;
 	Flashlight flash;
 	public GameObject ghost;
