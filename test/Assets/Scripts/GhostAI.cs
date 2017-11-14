@@ -21,6 +21,11 @@ public class GhostAI : MonoBehaviour {
 
 }
 
+void Follow(){
+	transform.LookAt(target);
+	transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
+	}
+	
 void Wander(){
 
 	transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
@@ -39,9 +44,6 @@ void Wander(){
 	}
 }
 
-void Follow(){
-	transform.LookAt(target);
-	transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
-	}
+
 
 }
