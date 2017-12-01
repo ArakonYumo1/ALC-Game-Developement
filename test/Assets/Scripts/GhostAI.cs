@@ -4,10 +4,10 @@ using System.Collections;
 public class GhostAI : MonoBehaviour {
 
 	public float moveSpeed;
+
 	public Transform target;
+
 	public int damage;
-
-
 
 	void OnTriggerStay(Collider other)
 	{
@@ -20,7 +20,6 @@ public class GhostAI : MonoBehaviour {
 	}
 
 }
-
 void Follow(){
 	transform.LookAt(target);
 	transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
@@ -40,10 +39,7 @@ void Wander(){
 
 		if(hit.collider.tag == "Wall"){
 			transform.Rotate(0,randomNum,0);
+			}
 		}
 	}
-}
-
-
-
 }
