@@ -18,6 +18,10 @@ public class Flashlight : MonoBehaviour {
 	public GameObject Battery;
 
 	Light light;
+
+	bool draining = false;
+
+	long count = 0;
 	// Gets Battery UI Text
 	public Text batteryText;
 
@@ -52,10 +56,19 @@ public class Flashlight : MonoBehaviour {
 	//batteryText.text = currentPower.ToString();
 
 	//Drain Battery Life
-		if(currentPower > 0){
+		if(currentPower > 0 && lightOn){
+			if(!draining){
 			StartCoroutine(BatteryDrain(batDrainDelay,batDrainAmt));
 		}
+	
+	else if (currentPower <= 0){
+		lightOn = false;
+		light.enabled = false;
 	}
+	}
+	}
+
+
 
 	public void setLightOn(){
 			lightOn = true;
@@ -68,12 +81,17 @@ public class Flashlight : MonoBehaviour {
 	}
 
 	IEnumerator BatteryDrain(float delay, int amount){
+		if(lightOn){
+			draining = true;
 			yield return new WaitForSeconds(delay);
+			print(currentPower);
 			currentPower -= amount;
+			}
 			if(currentPower <= 0){
 				currentPower = 0;
 				print("Battery is dead!");
 				light.enabled = false;
-			}
 		}
-	}
+		draining = false;
+	}	
+}
