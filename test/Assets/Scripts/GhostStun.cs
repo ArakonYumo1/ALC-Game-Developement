@@ -5,7 +5,9 @@ public class GhostStun : MonoBehaviour {
 
 	
 	bool lightcheck;
+
 	Flashlight flash;
+	
 	public GameObject ghost;
 
 	void Start () {

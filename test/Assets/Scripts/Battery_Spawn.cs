@@ -21,14 +21,16 @@ public class Battery_Spawn : MonoBehaviour {
 	void Update () {
 		if(batSpawned == false){
 			StartCoroutine(SpawnBat(spawnTime, battery));
+			print("Battery has spawned");
 		}
 		else{
-
+			print("Spawn box is empty");
 		}
 	}
 
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.tag == "Battery"){
+			print("battery is in the trigger");
 			batSpawned = true;
 		}
 		else{
