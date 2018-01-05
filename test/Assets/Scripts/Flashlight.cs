@@ -41,13 +41,13 @@ public class Flashlight : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Toggle light on/off when l key is pressed.
-		if (Input.GetKeyUp (KeyCode.L) && lightOn) {
+		if (Input.GetKeyUp (KeyCode.E) && lightOn) {
 		print("Light off");
 		lightOn = false;
 		light.enabled = false;
 		
 		}
-		else if (Input.GetKeyUp (KeyCode.L) && !lightOn && currentPower > 0){
+		else if (Input.GetKeyUp (KeyCode.E) && !lightOn && currentPower > 0){
 			print("Light On");
 			lightOn = true;
 			light.enabled = true;

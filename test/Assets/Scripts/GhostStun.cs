@@ -8,7 +8,9 @@ public class GhostStun : MonoBehaviour {
 
 	Flashlight flash;
 	
-	public GameObject ghost;
+	public GameObject Ghost;
+
+	public GameObject Flashlight;
 
 	void Start () {
 		flash = gameObject.GetComponentInChildren<Light>().GetComponentInChildren<Flashlight>();
