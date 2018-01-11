@@ -11,7 +11,7 @@ public class GhostAI : MonoBehaviour {
 
 	void OnTriggerStay(Collider other)
 	{
-		if(other.gameObject.name == "player"){
+		if(other.gameObject.name == "Player"){
 			Follow();
 		}
 		else{

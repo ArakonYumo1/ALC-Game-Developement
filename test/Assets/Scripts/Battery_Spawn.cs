@@ -28,7 +28,7 @@ public class Battery_Spawn : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerStay(Collider other){
 		if(other.gameObject.tag == "Battery"){
 			print("battery is in the trigger");
 			batSpawned = true;

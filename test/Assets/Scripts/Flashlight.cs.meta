@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: f81c8ccff41c34b45b061ca68e733f4b
-timeCreated: 1508957794
+timeCreated: 1515525468
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Battery: {fileID: 145196, guid: 2aba9a63d69d142f9b15ecd5130fe7a9, type: 2}
+  - batteryText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

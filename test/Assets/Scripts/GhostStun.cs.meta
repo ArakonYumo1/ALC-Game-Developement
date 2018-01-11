@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 4fdee8e84e6c740aa9e66baa4d741cbb
-timeCreated: 1509646740
+timeCreated: 1515525452
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Ghost: {fileID: 154038, guid: 812b3f00a63644cfab97bc87b1e4d903, type: 2}
+  - Flashlight: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

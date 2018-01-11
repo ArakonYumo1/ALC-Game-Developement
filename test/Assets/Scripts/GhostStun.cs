@@ -26,12 +26,15 @@ public class GhostStun : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		print(other.gameObject.name);
+		print("other.gameObject.name");
 		print ("Collider" + flash);
 		if(other.gameObject.name == "Ghost" && flash == true ){
 			print("Ghost is stunned!");
 			other.GetComponent<GhostAI>().moveSpeed = 0f;
 			StartCoroutine(Wait(5, other));
+		}
+		else{
+			print("collider active");
 		}
 	}
 
